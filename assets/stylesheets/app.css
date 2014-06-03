@@ -1,4 +1,9 @@
-* {
+header {
+  background: black;
+  color: white;
+}
+
+/** {
   box-sizing: border-box;
 }
 
@@ -34,4 +39,4 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   width: 300px;
-}
+}*/
