@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="description" content="A description">
     <title>My Portfolio</title>
-    <!-- <link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/app.css" />
   </head>
   <body>
     <header class="header-introduction">
-      <h1>John Doe</h1>
-      <h2>UX &amp; Graphic Designer based in Cardiff, UK.</h2>
+      <div id="introduction">
+        <h1>John Doe</h1>
+        <h2>UX &amp; Graphic Designer based in Cardiff, UK.</h2>
+      </div>
     </header>
     <div class="container">
       <section class="about-me">
@@ -29,7 +31,14 @@
           <h3>Project Name</h3>
           <p>Phasellus quis elit auctor, imperdiet tellus sit amet, euismod mi. Quisque malesuada, nibh nec hendrerit euismod, urna nibh pharetra elit, et faucibus libero enim lobortis ligula. Proin vitae ipsum enim.</p>
         </article>
+        <div style="clear:both;"></div>
+      </section>
       </div>
-    </section>
+    <script type="text/javascript">
+      window.onload = function() {
+        var introduction = document.getElementById("introduction");
+        introduction.className = "loaded";
+      }
+    </script>
   </body>
 </html>

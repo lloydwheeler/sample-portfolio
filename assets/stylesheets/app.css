@@ -1,9 +1,4 @@
-header {
-  background: black;
-  color: white;
-}
-
-/** {
+* {
   box-sizing: border-box;
 }
 
@@ -13,11 +8,32 @@ html {
   height: 100%;
 }
 
-.introduction {
-  background: #ccc;
+.header-introduction {
+  background: #ccc url('../img/header-background.jpg') center center;
+  background-size: cover;
   height: 100%;
   padding: 20px;
   text-align: center;
+}
+
+.header-introduction h1,
+.header-introduction h2 {
+  color: #fff;
+}
+
+.header-introduction h1 {
+  font-size: 3em;
+}
+
+#introduction {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -webkit-transition: opacity .5s ease .5s, -webkit-transform .5s ease .5s;
+}
+
+#introduction.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
 }
 
 .container {
@@ -27,6 +43,11 @@ html {
 
 .my-work {
   margin-bottom: 50px;
+}
+
+.my-work:after {
+  content: "";
+  clear: both;
 }
 
 .about-me {
@@ -39,4 +60,4 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   width: 300px;
-}*/
+}
