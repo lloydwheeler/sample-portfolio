@@ -9,11 +9,11 @@ html {
 }
 
 .header-introduction {
-  background: #ccc url('../img/header-background.jpg') center bottom;
+  /*background: #ccc url('../img/header-background.jpg') center bottom;
   background-size: cover;
   height: 100%;
   padding: 20px;
-  text-align: center;
+  text-align: center;*/
 }
 
 .header-introduction h1 {
@@ -21,10 +21,10 @@ html {
 }
 
 #introduction {
-  margin-top: 50px;
+  /*margin-top: 50px;
   opacity: 0;
   -webkit-transform: translateY(-50px);
-  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;*/
 }
 
 #introduction.loaded {
@@ -46,14 +46,18 @@ html {
   clear: both;
 }
 
+.class {
+  display: none;
+}
+
 .about-me {
   margin: 40px 10px;
   width: 940px;
 }
 
 .project {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 300px;
+  /*float: left;*/
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+  /*width: 300px;*/
 }
