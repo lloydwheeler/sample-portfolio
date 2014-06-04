@@ -9,16 +9,11 @@ html {
 }
 
 .header-introduction {
-  background: #ccc url('../img/header-background.jpg') center center;
+  background: #ccc url('../img/header-background.jpg') center bottom;
   background-size: cover;
   height: 100%;
   padding: 20px;
   text-align: center;
-}
-
-.header-introduction h1,
-.header-introduction h2 {
-  color: #fff;
 }
 
 .header-introduction h1 {
@@ -26,9 +21,10 @@ html {
 }
 
 #introduction {
+  margin-top: 50px;
   opacity: 0;
-  -webkit-transform: translateY(-20px);
-  -webkit-transition: opacity .5s ease .5s, -webkit-transform .5s ease .5s;
+  -webkit-transform: translateY(-50px);
+  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
 }
 
 #introduction.loaded {
