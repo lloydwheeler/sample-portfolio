@@ -8,15 +8,15 @@ html {
   height: 100%;
 }
 
-.header-introduction {
-  background: #ccc url('../img/header-background.jpg') center bottom;
+.site-header {
+  background: #ccc url('../img/header-background.jpg');
+  background-position: center center;
   background-size: cover;
   height: 100%;
-  padding: 20px;
   text-align: center;
 }
 
-.header-introduction h1 {
+#introduction h1 {
   font-size: 3em;
 }
 
@@ -30,6 +30,21 @@ html {
 #introduction.loaded {
   opacity: 1;
   -webkit-transform: translateY(0);
+}
+
+
+.site-navigation {
+  text-align: right;
+}
+
+.site-navigation ul li {
+  display: inline-block;
+}
+
+.site-navigation ul li a {
+  color: #fff;
+  display: block;
+  padding: 20px;
 }
 
 .container {
@@ -57,3 +72,4 @@ html {
   margin-right: 10px;
   width: 300px;
 }
+
